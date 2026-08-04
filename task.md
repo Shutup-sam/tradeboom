@@ -1,0 +1,13 @@
+- `[x]` Install Supabase SDK dependency
+  - `[x]` Run npm install for @supabase/supabase-js
+- `[x]` Configure Supabase Client Helper
+  - `[x]` Create `src/lib/supabase.ts`
+- `[x]` Integrate Supabase in Server Actions
+  - `[x]` Modify `saveToDatabase` in `src/actions/actions.ts` to write to Supabase
+- `[x]` Integrate Supabase in Admin Dashboard
+  - `[x]` Modify `src/app/admin/page.tsx` to read from Supabase
+- `[x]` Write unit tests mocks
+  - `[x]` Create unit test mocks verifying dynamic database configurations
+- `[x]` Verify tests pass with `npm run test`
+- `[x]` Verify build compiles cleanly with `npm run build`
+- `[x]` Deploy to Vercel production with `npx vercel --prod -y`
