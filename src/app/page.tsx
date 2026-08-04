@@ -5,8 +5,6 @@ import { Hero } from '@/sections/hero/hero';
 import { WelcomeSection } from '@/sections/about/welcome';
 import { AboutSection } from '@/sections/about/about';
 import { CoursesSection } from '@/sections/courses/courses';
-import { RiskCalculator } from '@/sections/trading-calculator/risk-calculator';
-import { CandlestickQuiz } from '@/sections/trading-calculator/candlestick-quiz';
 import { ErrorBoundary } from '@/components/ui/error-boundary';
 import { ResultsSection } from '@/sections/results/results';
 import { MentorshipSection } from '@/sections/mentorship/mentorship';
@@ -16,6 +14,26 @@ import { BlogSection } from '@/sections/blog/blog';
 import { FAQSection } from '@/sections/faq/faq';
 import { ContactSection } from '@/sections/contact/contact';
 import { DisclaimerSection } from '@/sections/disclaimer/disclaimer';
+import dynamic from 'next/dynamic';
+
+// Lazy-load heavy below-the-fold components to reduce initial JS bundle
+const RiskCalculator = dynamic(
+  () => import('@/sections/trading-calculator/risk-calculator').then(m => ({ default: m.RiskCalculator })),
+  {
+    loading: () => (
+      <div className="h-[480px] w-full animate-pulse rounded-3xl bg-white/[0.03] border border-white/[0.06]" />
+    ),
+  }
+);
+
+const CandlestickQuiz = dynamic(
+  () => import('@/sections/trading-calculator/candlestick-quiz').then(m => ({ default: m.CandlestickQuiz })),
+  {
+    loading: () => (
+      <div className="h-[520px] w-full animate-pulse rounded-3xl bg-white/[0.03] border border-white/[0.06]" />
+    ),
+  }
+);
 
 export default function Home() {
   return (
