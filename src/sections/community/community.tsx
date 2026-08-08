@@ -33,7 +33,7 @@ export function CommunitySection() {
           eyebrow="The Community"
           title={
             <>
-              28,500+ traders.{' '}
+              2,500+ traders.{' '}
               <span className="italic text-gradient-aurora">One standard.</span>
             </>
           }
