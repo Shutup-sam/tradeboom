@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { RevealText } from '@/components/ui/reveal-text';
+import Image from 'next/image';
 
 export function WelcomeSection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -46,6 +47,31 @@ export function WelcomeSection() {
             >
               <p>— Ankit Kumar & Rishav Kumar</p>
             </RevealText>
+
+            {/* Founders Photo Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="relative mt-8 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02] p-2 backdrop-blur-md"
+            >
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                <Image
+                  src="/founders.jpg"
+                  alt="Ankit Kumar and Rishav Kumar — Founders of Trade Boom"
+                  fill
+                  className="object-cover object-top transition-transform duration-700 hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
+                  <div>
+                    <p className="text-xs font-semibold text-white">Ankit Kumar & Rishav Kumar</p>
+                    <p className="text-[10px] text-white/60">Founders & Lead Mentors</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
 
           {/* Right: editorial body */}

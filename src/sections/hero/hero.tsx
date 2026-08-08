@@ -175,8 +175,14 @@ export function Hero() {
             className="relative mx-auto w-full max-w-md lg:max-w-none"
           >
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-br from-ink-700/40 to-ink-800/60 backdrop-blur-xl">
-              {/* Placeholder portrait — replaced with real photo in production */}
-              <PortraitArt />
+              <Image
+                src="/founders.jpg"
+                alt="Ankit Kumar and Rishav Kumar — Founders of Trade Boom"
+                fill
+                className="object-cover object-top transition-transform duration-700 hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
               {/* Gradient overlay */}
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/80 via-transparent to-transparent" />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-electric-500/10 via-transparent to-emerald-500/10 mix-blend-overlay" />
