@@ -283,7 +283,6 @@ export const NAV_LINKS = [
   { label: 'Results', href: '#results' },
   { label: 'Mentorship', href: '#mentorship' },
   { label: 'Community', href: '#community' },
-  { label: 'Blog', href: '#blog' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ];

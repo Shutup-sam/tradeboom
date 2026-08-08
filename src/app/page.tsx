@@ -9,7 +9,6 @@ import { ResultsSection } from '@/sections/results/results';
 import { MentorshipSection } from '@/sections/mentorship/mentorship';
 import { CommunitySection } from '@/sections/community/community';
 import { ResourcesSection } from '@/sections/resources/resources';
-import { BlogSection } from '@/sections/blog/blog';
 import { FAQSection } from '@/sections/faq/faq';
 import { ContactSection } from '@/sections/contact/contact';
 import { DisclaimerSection } from '@/sections/disclaimer/disclaimer';
@@ -53,7 +52,6 @@ export default function Home() {
       <MentorshipSection />
       <CommunitySection />
       <ResourcesSection />
-      <BlogSection />
       <FAQSection />
       <ContactSection />
 

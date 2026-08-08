@@ -36,7 +36,6 @@ const FOOTER_COLS = [
       { label: 'Courses', href: '#courses' },
       { label: 'Mentorship', href: '#mentorship' },
       { label: 'Free Resources', href: '#resources' },
-      { label: 'Blog', href: '#blog' },
     ],
   },
   {
