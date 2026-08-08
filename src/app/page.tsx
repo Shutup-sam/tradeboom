@@ -2,7 +2,6 @@ import { Navigation } from '@/sections/navigation/navigation';
 import { LiveMarketRibbon } from '@/sections/market-ribbon/live-market-ribbon';
 import { Footer } from '@/sections/footer/footer';
 import { Hero } from '@/sections/hero/hero';
-import { WelcomeSection } from '@/sections/about/welcome';
 import { AboutSection } from '@/sections/about/about';
 import { CoursesSection } from '@/sections/courses/courses';
 import { ErrorBoundary } from '@/components/ui/error-boundary';
@@ -42,7 +41,6 @@ export default function Home() {
       <Navigation />
 
       <Hero />
-      <WelcomeSection />
       <AboutSection />
       <CoursesSection />
       <ErrorBoundary>
