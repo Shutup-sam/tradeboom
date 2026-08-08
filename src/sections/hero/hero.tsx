@@ -73,7 +73,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
               className="flex items-center gap-4 mt-8 sm:mt-10"
             >
-              <div className="relative h-16 w-16 md:h-20 md:w-20">
+              <div className="relative h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24">
                 <Image
                   src="/logo.svg"
                   alt="Trade Boom Logo"
@@ -83,32 +83,14 @@ export function Hero() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-none">
+                <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-none">
                   Trade<span className="text-gradient-aurora">Boom</span>
-                </span>
-                <span className="text-[10px] md:text-[12px] font-semibold uppercase tracking-[0.3em] text-white/40 mt-1.5">
+                </h1>
+                <p className="text-[11px] md:text-[13px] font-semibold uppercase tracking-[0.3em] text-white/50 mt-2">
                   Master the Markets
-                </span>
+                </p>
               </div>
             </motion.div>
-
-            <div className="mt-6 max-w-3xl sm:mt-8">
-              <h1 className="text-display-xl font-display font-light leading-[0.95] tracking-tight">
-                <SplitRevealText
-                  text="Trade Boom"
-                  className="text-white"
-                  delay={0.8}
-                  staggerDelay={0.06}
-                />
-                <br />
-                <SplitRevealText
-                  text="Master the Markets."
-                  className="text-gradient-aurora"
-                  delay={1.2}
-                  staggerDelay={0.06}
-                />
-              </h1>
-            </div>
 
             <motion.p
               initial={{ opacity: 0, y: 16 }}
