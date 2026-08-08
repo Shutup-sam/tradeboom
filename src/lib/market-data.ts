@@ -227,10 +227,10 @@ export const TESTIMONIALS = [
 ];
 
 export const STATS = [
-  { label: 'Active Students', value: 12400, suffix: '+' },
-  { label: 'Hours of Mentorship', value: 8400, suffix: '+' },
-  { label: 'Years of Experience', value: 12, suffix: '' },
-  { label: 'Community Members', value: 28500, suffix: '+' },
+  { label: 'Active Students', value: 1240, suffix: '+' },
+  { label: 'Hours of Mentorship', value: 2300, suffix: '+' },
+  { label: 'Years of Experience', value: 7, suffix: '' },
+  { label: 'Community Members', value: 2500, suffix: '+' },
 ];
 
 export const FAQ_ITEMS = [
@@ -288,13 +288,12 @@ export const NAV_LINKS = [
 ];
 
 export const TIMELINE = [
-  { year: '2013', title: 'First Trade', description: 'Entered the markets with curiosity and a small capital — and a lot to learn.' },
-  { year: '2015', title: 'First Drawdown', description: 'Lost 60% of capital. The most important lesson: risk management is everything.' },
-  { year: '2017', title: 'Recovery & System', description: 'Rebuilt from scratch with a rules-based approach and strict risk controls.' },
-  { year: '2019', title: 'Consistency', description: 'First full year of consistent profitability. Began mentoring individual traders.' },
-  { year: '2021', title: 'Trade Boom Founded', description: 'Launched Trade Boom to bring structured, honest education to retail traders.' },
-  { year: '2023', title: 'Community at 10,000', description: 'Crossed 10,000 active students across 6+ countries. Built the private community.' },
-  { year: '2025', title: 'Premium Mentorship', description: 'Launched the 1-on-1 mentorship program for serious traders ready to go full-time.' },
+  { year: '2019', title: 'First Trade', description: 'Entered the markets with curiosity and a small capital — and a lot to learn.' },
+  { year: '2020', title: 'First Drawdown & System', description: 'Experienced real market volatility. Learned that risk management and capital preservation are everything.' },
+  { year: '2021', title: 'Consistency & System', description: 'Rebuilt with a rules-based approach, strict risk controls, and disciplined process.' },
+  { year: '2023', title: 'Trade Boom Founded', description: 'Launched Trade Boom to bring structured, honest education to retail traders.' },
+  { year: '2024', title: 'Community Growth', description: 'Grew active student community across India with structured learning and live market sessions.' },
+  { year: '2026', title: 'Premium Mentorship', description: 'Expanded 1-on-1 mentorship and advanced trading frameworks for dedicated traders.' },
 ];
 
 export const COMMUNITY_LINKS = [
