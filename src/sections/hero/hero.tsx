@@ -18,7 +18,7 @@ export function Hero() {
     offset: ['start start', 'end start'],
   });
   const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 1, 0]);
   const { setVariant } = useCursor();
 
   return (
