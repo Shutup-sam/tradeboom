@@ -5,6 +5,7 @@ import { CursorProvider } from '@/components/providers/cursor-provider';
 import { CustomCursor } from '@/components/ui/custom-cursor';
 import { ScrollProgress } from '@/components/ui/scroll-progress';
 import { WhatsAppFloat } from '@/components/ui/whatsapp-float';
+import { JsonLd } from '@/components/ui/json-ld';
 import '../styles/globals.css';
 
 const inter = Inter({
@@ -28,19 +29,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://tradeboom.in'),
+  metadataBase: new URL('https://www.tradeboom.in'),
   title: {
     default: 'Trade Boom — Master the Markets with Confidence | Ankit Kumar & Rishav Kumar',
     template: '%s | Trade Boom',
   },
   description:
-    'Trade Boom by Ankit Kumar and Rishav Kumar — premium trading education, structured mentorship, and a thriving community of disciplined traders. Build real skill, not shortcuts.',
+    'Trade Boom by Ankit Kumar and Rishav Kumar — premium trading education, structured mentorship, and a community of disciplined traders. Build real skill, not shortcuts.',
   keywords: [
-    'trading education',
-    'stock market courses',
-    'Ankit Kumar',
-    'Rishav Kumar',
     'Trade Boom',
+    'tradeboom',
+    'tradeboom.in',
+    'trading education india',
+    'stock market courses',
+    'Ankit Kumar trader',
+    'Rishav Kumar trader',
     'price action course',
     'intraday trading',
     'options trading course',
@@ -52,20 +55,23 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Ankit Kumar' }, { name: 'Rishav Kumar' }],
   creator: 'Trade Boom',
+  alternates: {
+    canonical: 'https://www.tradeboom.in',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://tradeboom.in',
+    url: 'https://www.tradeboom.in',
     siteName: 'Trade Boom',
     title: 'Trade Boom — Master the Markets with Confidence',
     description:
       'Premium trading education by Ankit Kumar and Rishav Kumar. Structured courses, personal mentorship, and a community of disciplined traders.',
     images: [
       {
-        url: '/og.png',
+        url: '/founders.jpg',
         width: 1200,
         height: 630,
-        alt: 'Trade Boom — Master the Markets',
+        alt: 'Trade Boom — Ankit Kumar and Rishav Kumar',
       },
     ],
   },
@@ -73,11 +79,18 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Trade Boom — Master the Markets with Confidence',
     description: 'Premium trading education, mentorship, and community by Ankit Kumar and Rishav Kumar.',
-    creator: '@tradeboom',
+    images: ['/founders.jpg'],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -91,6 +104,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <JsonLd />
+      </head>
       <body className="bg-ink-950 text-white antialiased">
         <a
           href="#main"
