@@ -1,7 +1,10 @@
 # GitHub Linguist language stats configuration
-# Exclude PowerShell helper scripts and documentation from language percentages
+# Map TypeScript (.ts / .tsx) files to JavaScript for repository statistics
+
+*.ts linguist-language=JavaScript
+*.tsx linguist-language=JavaScript
 
 *.ps1 linguist-vendored=true
-scripts/*.ps1 linguist-vendored=true
+scripts/* linguist-vendored=true
 docs/* linguist-documentation=true
 adapters/* linguist-documentation=true
